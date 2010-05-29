@@ -110,15 +110,11 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] mime-types (v1.16, /Users/sunit/.rvm/gems/ruby-head@global/gems/mime-types-1.16)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] activesupport (v3.0.0.beta3, /Users/sunit/.rvm/gems/ruby-head@global/gems/activesupport-3.0.0.beta3)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] abstract (v1.0.0, /Users/sunit/.rvm/gems/ruby-head@global/gems/abstract-1.0.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] activemodel (v3.0.0.beta3, /Users/sunit/.rvm/gems/ruby-head@global/gems/activemodel-3.0.0.beta3)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rack-test (v0.5.4, /Users/sunit/.rvm/gems/ruby-head@global/gems/rack-test-0.5.4)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] polyglot (v0.3.1, /Users/sunit/.rvm/gems/ruby-head@global/gems/polyglot-0.3.1)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] actionmailer (v3.0.0.beta3, /Users/sunit/.rvm/gems/ruby-head@global/gems/actionmailer-3.0.0.beta3)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] bundler (v0.9.25, /Users/sunit/.rvm/gems/ruby-head@global/gems/bundler-0.9.25)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] text-format (v1.0.0, /Users/sunit/.rvm/gems/ruby-head@global/gems/text-format-1.0.0)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] actionpack (v3.0.0.beta3, /Users/sunit/.rvm/gems/ruby-head@global/gems/actionpack-3.0.0.beta3)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] tzinfo (v0.3.21, /Users/sunit/.rvm/gems/ruby-head@global/gems/tzinfo-0.3.21)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] builder (v2.1.2, /Users/sunit/.rvm/gems/ruby-head@global/gems/builder-2.1.2)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] memcache-client (v1.8.3, /Users/sunit/.rvm/gems/ruby-head@global/gems/memcache-client-1.8.3)" level="application" />
@@ -126,16 +122,12 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] arel (v0.3.3, /Users/sunit/.rvm/gems/ruby-head@global/gems/arel-0.3.3)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] erubis (v2.6.5, /Users/sunit/.rvm/gems/ruby-head@global/gems/erubis-2.6.5)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rack-mount (v0.6.3, /Users/sunit/.rvm/gems/ruby-head@global/gems/rack-mount-0.6.3)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] rails (v3.0.0.beta3, /Users/sunit/.rvm/gems/ruby-head@global/gems/rails-3.0.0.beta3)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] railties (v3.0.0.beta3, /Users/sunit/.rvm/gems/ruby-head@global/gems/railties-3.0.0.beta3)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] thor (v0.13.6, /Users/sunit/.rvm/gems/ruby-head@global/gems/thor-0.13.6)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rake (v0.8.7, /Users/sunit/.rvm/gems/ruby-head@global/gems/rake-0.8.7)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] text-hyphen (v1.0.0, /Users/sunit/.rvm/gems/ruby-head@global/gems/text-hyphen-1.0.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] i18n (v0.3.7, /Users/sunit/.rvm/gems/ruby-head@global/gems/i18n-0.3.7)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] mail (v2.2.1, /Users/sunit/.rvm/gems/ruby-head@global/gems/mail-2.2.1)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] activerecord (v3.0.0.beta3, /Users/sunit/.rvm/gems/ruby-head@global/gems/activerecord-3.0.0.beta3)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rack (v1.1.0, /Users/sunit/.rvm/gems/ruby-head@global/gems/rack-1.1.0)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] activeresource (v3.0.0.beta3, /Users/sunit/.rvm/gems/ruby-head@global/gems/activeresource-3.0.0.beta3)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] sqlite3-ruby (v1.2.5, /Users/sunit/.rvm/gems/ruby-head@global/gems/sqlite3-ruby-1.2.5)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] haml (v3.0.6, /Users/sunit/.rvm/gems/ruby-head@global/gems/haml-3.0.6)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] compass (v0.10.1, /Users/sunit/.rvm/gems/ruby-head@global/gems/compass-0.10.1)" level="application" />
@@ -148,6 +140,14 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] rspec-mocks (v2.0.0.beta.9, /Users/sunit/.rvm/gems/ruby-head@global/gems/rspec-mocks-2.0.0.beta.9)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rspec-rails (v2.0.0.beta.9.1, /Users/sunit/.rvm/gems/ruby-head@global/gems/rspec-rails-2.0.0.beta.9.1)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] webrat (v0.7.1, /Users/sunit/.rvm/gems/ruby-head@global/gems/webrat-0.7.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activesupport (v3.0.0.beta3, /Users/sunit/.rvm/gems/ruby-head@global/gems/activesupport-3.0.0.beta3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rails (v3.0.0.beta3, /Users/sunit/.rvm/gems/ruby-head@global/gems/rails-3.0.0.beta3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] railties (v3.0.0.beta3, /Users/sunit/.rvm/gems/ruby-head@global/gems/railties-3.0.0.beta3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] actionmailer (v3.0.0.beta3, /Users/sunit/.rvm/gems/ruby-head@global/gems/actionmailer-3.0.0.beta3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] bundler (v0.9.25, /Users/sunit/.rvm/gems/ruby-head@global/gems/bundler-0.9.25)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activerecord (v3.0.0.beta3, /Users/sunit/.rvm/gems/ruby-head@global/gems/activerecord-3.0.0.beta3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] actionpack (v3.0.0.beta3, /Users/sunit/.rvm/gems/ruby-head@global/gems/actionpack-3.0.0.beta3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activeresource (v3.0.0.beta3, /Users/sunit/.rvm/gems/ruby-head@global/gems/activeresource-3.0.0.beta3)" level="application" />
   </component>
 </module>
 

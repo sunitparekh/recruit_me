@@ -1,6 +1,9 @@
 - unless notice.nil?
   %p.notice
     = notice
+.right
+  = link_to 'Edit Candidate', edit_candidate_path(@candidate)
+  = link_to 'Schedule Interview', new_candidate_interview_path(:candidate_id => @candidate.id)
 .field
   .label
     %b Name:
@@ -56,5 +59,4 @@
     %b Status:
   .value
     = @candidate.status
-.actions
-  = link_to 'Edit', edit_candidate_path(@candidate)
+= render 'interviews/index', :locals => { :interviews => @candidate.interviews }

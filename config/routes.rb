@@ -1,5 +1,9 @@
 RecruitMe::Application.routes.draw do |map|
-  resources :candidates, :path_names => { :home => 'home' }
+
+
+  resources :candidates, :path_names => { :home => 'home' } do
+    resources :interviews
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -44,6 +44,10 @@ table {
     width: 100%
 }
 
+th {
+    font-weight: bold;
+}
+
 th, td {
     font-size: 0.9em;
     height: 2em;
