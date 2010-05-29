@@ -11,7 +11,7 @@ class CandidatesController < ApplicationController
   end
 
   def index
-    @candidates = prepare_filter.order(params[:order] || "name").all(:limit => 50)
+    @candidates = prepare_filter.order(params[:order] ||  "name").all(:limit => 50)
   end
 
   def home
