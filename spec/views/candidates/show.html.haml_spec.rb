@@ -22,7 +22,7 @@ describe "candidates/show.html.erb" do
    rendered.should contain("MyString")
    rendered.should contain("MyString")
    rendered.should contain("MyString")
-   rendered.should contain(1)
+   rendered.should contain("1")
    rendered.should contain("MyString")
    rendered.should contain("MyString")
    rendered.should contain("MyString")
