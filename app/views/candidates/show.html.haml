@@ -1,34 +1,53 @@
 %p.notice= notice
-%p
-  %b Name:
-  = @candidate.name
-%p
-  %b Email:
-  = @candidate.email
-%p
-  %b Role:
-  = @candidate.role
-%p
-  %b Position:
-  = @candidate.position
-%p
-  %b Experience:
-  = @candidate.experience
-%p
-  %b Coordinator:
-  = @candidate.coordinator
-%p
-  %b City:
-  = @candidate.city
-%p
-  %b Office:
-  = @candidate.office
-%p
-  %b Contact number:
-  = @candidate.contact_number
-%p
-  %b Status:
-  = @candidate.status
-= link_to 'Edit', edit_candidate_path(@candidate)
-|
-\#{link_to 'Back', candidates_path}
+.field
+  .label
+    %b Name:
+  .value
+    = @candidate.name
+.field
+  .label
+    %b Email:
+  .value
+    = @candidate.email
+.field
+  .label
+    %b Role:
+  .value
+    = @candidate.role
+.field
+  .label
+    %b Position:
+  .value
+    = @candidate.position
+.field
+  .label
+    %b Experience:
+  .value
+    = @candidate.experience
+.field
+  .label
+    %b Coordinator:
+  .value
+    = @candidate.coordinator
+.field
+  .label
+    %b City:
+  .value
+    = @candidate.city
+.field
+  .label
+    %b Office:
+  .value
+    = @candidate.office
+.field
+  .label
+    %b Contact number:
+  .value
+    = @candidate.contact_number
+.field
+  .label
+    %b Status:
+  .value
+    = @candidate.status
+.actions
+  = link_to 'Edit', edit_candidate_path(@candidate)

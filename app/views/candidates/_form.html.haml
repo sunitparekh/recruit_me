@@ -46,7 +46,7 @@
     .label
       = f.label :office
     .control
-      = f.text_field :office
+      = f.select(:office, options_for_select([['Pune', 'Pune'], ['Bangalore', 'Bangalore'], ['Chennai', 'Chennai'], ['Delhi', 'Delhi']], @candidate.office))
   .field
     .label
       = f.label :contact_number

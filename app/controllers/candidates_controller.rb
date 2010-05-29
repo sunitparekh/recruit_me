@@ -1,11 +1,17 @@
 class CandidatesController < ApplicationController
 
   def prepare_filter
-    Hash[ *(params[:filter].each.collect { |key, value| [key, value] }).flatten] unless params[:filter].nil?
+    canidates_search = Candidate.where
+    unless params[:filter].nil?
+      params[:filter].each do |key, value|
+        canidates_search = canidates_search.where("#{key} like '%#{value}%'")
+      end
+    end
+    canidates_search
   end
 
   def index
-    @canidates_search = Candidate.where(prepare_filter || {})
+    @canidates_search = prepare_filter
     @candidates = @canidates_search.all
   end
 
