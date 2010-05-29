@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" id="ee6f0fe9-95f2-465c-9893-5f61831eec02" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="recruit_me.iws" />
@@ -76,15 +75,6 @@
         <entry file="file://$PROJECT_DIR$/spec/views/candidates/show.html.haml_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="13" column="20" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -566,13 +556,6 @@
     <entry file="file://$PROJECT_DIR$/spec/views/candidates/show.html.haml_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="20" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
