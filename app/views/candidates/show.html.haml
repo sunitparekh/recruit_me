@@ -1,0 +1,34 @@
+%p.notice= notice
+%p
+  %b Name:
+  = @candidate.name
+%p
+  %b Email:
+  = @candidate.email
+%p
+  %b Role:
+  = @candidate.role
+%p
+  %b Position:
+  = @candidate.position
+%p
+  %b Experience:
+  = @candidate.experience
+%p
+  %b Coordinator:
+  = @candidate.coordinator
+%p
+  %b City:
+  = @candidate.city
+%p
+  %b Office:
+  = @candidate.office
+%p
+  %b Contact number:
+  = @candidate.contact_number
+%p
+  %b Status:
+  = @candidate.status
+= link_to 'Edit', edit_candidate_path(@candidate)
+|
+\#{link_to 'Back', candidates_path}

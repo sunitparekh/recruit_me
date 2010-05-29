@@ -1,0 +1,52 @@
+= form_for(@candidate) do |f|
+  - if @candidate.errors.any?
+    #errorExplanation
+      %h2
+        = pluralize(@candidate.errors.count, "error")
+        prohibited this candidate from being saved:
+      %ul
+        - @candidate.errors.full_messages.each do |msg|
+          %li= msg
+  .field
+    = f.label :name
+    %br/
+    = f.text_field :name
+  .field
+    = f.label :email
+    %br/
+    = f.text_field :email
+  .field
+    = f.label :role
+    %br/
+    = f.text_field :role
+  .field
+    = f.label :position
+    %br/
+    = f.text_field :position
+  .field
+    = f.label :experience
+    %br/
+    = f.text_field :experience
+  .field
+    = f.label :coordinator
+    %br/
+    = f.text_field :coordinator
+  .field
+    = f.label :city
+    %br/
+    = f.text_field :city
+  .field
+    = f.label :office
+    %br/
+    = f.text_field :office
+  .field
+    = f.label :contact_number
+    %br/
+    = f.text_field :contact_number
+  .field
+    = f.label :status
+    %br/
+    = f.text_field :status
+  .actions
+    = f.submit
+    
