@@ -1,7 +1,7 @@
 = form_for(@candidate) do |f|
   - if @candidate.errors.any?
-    #errorExplanation
-      %h2
+    .error
+      %h3
         = pluralize(@candidate.errors.count, "error")
         prohibited this candidate from being saved:
       %ul
@@ -9,54 +9,64 @@
           %li= msg
   .field
     .label
-      = f.label :name
+      = f.label "Name:"
     .control
       = f.text_field :name
   .field
     .label
-      = f.label :email
+      = f.label "Email address:"
     .control
       = f.text_field :email
   .field
     .label
-      = f.label :role
+      = f.label "Role:"
     .control
       = f.select(:role, options_for_select([['Project Manager', 'Project Manager'], ['Developer', 'Developer'], ['Business Analys', 'Business Analyst'], ['Quality Analyst', 'Quality Analyst']], @candidate.role))
   .field
     .label
-      = f.label :position
+      = f.label "Position:"
     .control
       = f.select(:position, options_for_select([['Consultant', 'Consultant'], ['Sr. Consultant', 'Sr. Consultant'], ['Lead Consultant', 'Lead Consultant'], ['Principle Consultant', 'Principle Consultant'], ['Contractor', 'Contractor']], @candidate.position))
   .field
     .label
-      = f.label :experience
+      = f.label "Work experience:"
     .control
       = f.text_field :experience, :size => 3, :max_length => 5
+      (in years)
   .field
     .label
-      = f.label :coordinator
+      = f.label "Cordinator:"
     .control
       = f.text_field :coordinator
+      (recruitment team member who is following up with the candidate)
   .field
     .label
-      = f.label :city
+      = f.label "City:"
     .control
-      = f.text_field :city
+      = f.text_field :city, :size => 20
+      (from where the candidate is)
   .field
     .label
-      = f.label :office
+      = f.label "Skills:"
+    .control
+      = f.text_field :skills, :size => 100
+      (comma seperated skill sets)
+  .field
+    .label
+      = f.label "Office"
     .control
       = f.select(:office, options_for_select([['Pune', 'Pune'], ['Bangalore', 'Bangalore'], ['Chennai', 'Chennai'], ['Delhi', 'Delhi']], @candidate.office))
   .field
     .label
-      = f.label :contact_number
+      = f.label "Contact number:"
     .control
       = f.text_field :contact_number
   .field
     .label
-      = f.label :status
+      = f.label "Status:"
     .control
       = f.select(:status, options_for_select([['Open', 'Open'], ['In Progress', 'In Progress'], ['On Hold', 'On Hold'], ['Pass', 'Pass'], ['Pursue', 'Pursue'], ['Closed', 'Closed']], @candidate.status))
   .actions
-    = f.submit
+    = f.submit(:class => "submit")
+    = link_to 'Cancel', candidates_path('filter[status]' => 'In Progress'), :class => "secondary"
     

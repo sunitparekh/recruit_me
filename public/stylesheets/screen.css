@@ -4,12 +4,13 @@ html {
     padding: 0;
     color: #000;
     background: #a7a09a;
+    font-family: Lucida Sans,serif;
+    font-size: 10pt;
 }
 
 #wrap {
-    width: 960px;
+    width: 90%;
     margin: 0 auto;
-    background: #99c;
 }
 
 #header {
@@ -17,15 +18,20 @@ html {
     background: #ddd;
 }
 
+#header .title {
+    font-size: 3em;
+    padding: 20px;
+}
+
 #main {
-    padding: 10px;
-    background: #9c9;
+    padding: 20px;
+    background: #bbcdd5;
 }
 
 #footer {
     clear: both;
     padding: 5px 10px;
-    background: #cc9;
+    background: #fff;
 }
 
 
@@ -42,7 +48,18 @@ table {
 }
 
 th, td {
-    font-size: 0.8em;
+    font-size: 0.9em;
+    height: 2em;
     text-align: left;
     border-bottom: 1px solid;
+}
+
+h1 {
+    font-size: 1.6em;
+}
+h2 {
+    font-size: 1.4em;
+}
+h3 {
+    font-size: 1.2em;
 }

@@ -7,7 +7,7 @@
     float: left;
     width: 20%;
     text-align: right;
-    padding: 0 20px
+    padding: 0 5px
 }
 
 .field .control {
@@ -19,4 +19,55 @@
     clear: both;
     width: 100%;
     text-align: center;
+}
+
+.notice {
+    padding: 20px;
+    border: 1px solid green; 
+    background-color: #aee3ae;
+}
+
+.error {
+    color: red;
+    padding: 20px;
+    border: 1px solid #666666;
+    background-color: #d6d5d5;
+}
+input, select, textarea{
+    font-size: 0.9em;
+    padding: 2px;
+
+    border: 1px solid #014464;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+a, .submit{
+    font-size: 0.9em;
+    padding: 5px 12px;
+    margin: 0 10px;
+    background-color: #014464;
+    text-decoration: none;
+    color: white;
+
+    border: 1px solid #368DBE;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+
+
+    -moz-box-shadow: 0 1px 3px black;
+    -webkit-box-shadow: 0 1px 3px black;
+    box-shadow: 0 1px 3px black;
+}
+
+.small {
+    padding: 3px 6px;
+    margin: 0 3px;
+}
+
+.secondary {
+    background-color: #999999;
+    border-color: black;
 }

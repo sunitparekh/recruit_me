@@ -31,7 +31,7 @@ class CandidatesController < ApplicationController
     @candidate = Candidate.new(params[:candidate])
 
     if @candidate.save
-      redirect_to(@candidate, :notice => 'Candidate was successfully created.')
+      redirect_to(@candidate, :notice => 'Candidate details successfully created.')
     else
       render :action => "new"
     end
@@ -41,7 +41,7 @@ class CandidatesController < ApplicationController
     @candidate = Candidate.find(params[:id])
 
     if @candidate.update_attributes(params[:candidate])
-      redirect_to(@candidate, :notice => 'Candidate was successfully updated.')
+      redirect_to(@candidate, :notice => 'Candidate details successfully updated.')
     else
       render :action => "edit"
     end

@@ -1,6 +1,6 @@
 #nav {
-    padding: 5px 10px;
-    background: #c99;
+    padding: 10px 15px;
+    background: #fff;
 }
 
 #nav ul {
@@ -11,7 +11,6 @@
 
 #nav li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 5px;
     padding: 0;
 }
-

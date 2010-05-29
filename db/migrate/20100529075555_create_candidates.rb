@@ -11,6 +11,7 @@ class CreateCandidates < ActiveRecord::Migration
       t.string :office
       t.string :contact_number
       t.string :status
+      t.string :skills
 
       t.timestamps
     end

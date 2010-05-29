@@ -1,4 +1,6 @@
-%p.notice= notice
+- unless notice.nil?
+  %p.notice
+    = notice
 .field
   .label
     %b Name:
@@ -24,6 +26,11 @@
     %b Experience:
   .value
     = @candidate.experience
+.field
+  .label
+    %b Skills:
+  .value
+    = @candidate.skills
 .field
   .label
     %b Coordinator:
