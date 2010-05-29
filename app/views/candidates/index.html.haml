@@ -7,8 +7,8 @@
   %tr
     %th name
     %th email
-    %th role
     %th exp
+    %th role, position
     %th skills
     %th coordinator
     %th Contact number
@@ -20,8 +20,8 @@
     %tr
       %td= candidate.name
       %td= candidate.email
+      %td= "#{candidate.experience} yrs"
       %td= "#{candidate.role}, #{candidate.position}"
-      %td= candidate.experience
       %td= candidate.skills
       %td= candidate.coordinator
       %td= candidate.contact_number
