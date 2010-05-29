@@ -15,9 +15,7 @@ class CandidatesController < ApplicationController
   end
 
   def home
-    params[:filter] = { :status => 'In Progress'}
-    index
-    render 'index'
+    redirect_to candidates_url :filter => {:status => 'In Progress'}
   end
 
   def show
