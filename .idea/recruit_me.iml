@@ -12,9 +12,69 @@
   <component name="GemRequirementsHolder" version="2">
     <requirement>
       <requirement>
+        <dependency name="diff-lcs" version="0" bound="GREATER_OR_EQUAL" git="false" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="haml" version="0" bound="GREATER_OR_EQUAL" git="false" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="nokogiri" version="0" bound="GREATER_OR_EQUAL" git="false" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rack" version="0" bound="GREATER_OR_EQUAL" git="false" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rack-test" version="0" bound="GREATER_OR_EQUAL" git="false" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
         <dependency name="rails" version="3.0.0.beta3" bound="EQUAL" git="false" />
       </requirement>
       <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rspec" version="0" bound="GREATER_OR_EQUAL" git="false" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rspec-core" version="0" bound="GREATER_OR_EQUAL" git="false" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rspec-expectations" version="0" bound="GREATER_OR_EQUAL" git="false" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rspec-mocks" version="0" bound="GREATER_OR_EQUAL" git="false" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rspec-rails" version="0" bound="GREATER_OR_EQUAL" git="false" />
+      </requirement>
+      <source manual="true" />
     </requirement>
     <requirement>
       <requirement>
@@ -27,6 +87,18 @@
         <dependency name="sqlite3-ruby" version="0" bound="GREATER_OR_EQUAL" git="false" />
       </requirement>
       <source from="config/database.yml" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="webrat" version="0" bound="GREATER_OR_EQUAL" git="false" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="will_paginate" version="0" bound="GREATER_OR_EQUAL" git="false" />
+      </requirement>
+      <source from="Gemfile" />
     </requirement>
   </component>
   <component name="NewModuleRootManager">
@@ -68,6 +140,14 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] haml (v3.0.6, /Users/sunit/.rvm/gems/ruby-head@global/gems/haml-3.0.6)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] compass (v0.10.1, /Users/sunit/.rvm/gems/ruby-head@global/gems/compass-0.10.1)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] will_paginate (v3.0.pre, /Users/sunit/.rvm/gems/ruby-head@global/gems/will_paginate-3.0.pre)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] diff-lcs (v1.1.2, /Users/sunit/.rvm/gems/ruby-head@global/gems/diff-lcs-1.1.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] nokogiri (v1.4.2, /Users/sunit/.rvm/gems/ruby-head@global/gems/nokogiri-1.4.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rspec (v2.0.0.beta.9, /Users/sunit/.rvm/gems/ruby-head@global/gems/rspec-2.0.0.beta.9)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rspec-core (v2.0.0.beta.9, /Users/sunit/.rvm/gems/ruby-head@global/gems/rspec-core-2.0.0.beta.9)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rspec-expectations (v2.0.0.beta.9, /Users/sunit/.rvm/gems/ruby-head@global/gems/rspec-expectations-2.0.0.beta.9)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rspec-mocks (v2.0.0.beta.9, /Users/sunit/.rvm/gems/ruby-head@global/gems/rspec-mocks-2.0.0.beta.9)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rspec-rails (v2.0.0.beta.9.1, /Users/sunit/.rvm/gems/ruby-head@global/gems/rspec-rails-2.0.0.beta.9.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] webrat (v0.7.1, /Users/sunit/.rvm/gems/ruby-head@global/gems/webrat-0.7.1)" level="application" />
   </component>
 </module>
 
