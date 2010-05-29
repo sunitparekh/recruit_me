@@ -1,0 +1,29 @@
+!!! Strict
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
+    %title RecruitMe - ThoughtWorks Recruiting
+    = stylesheet_link_tag 'screen', 'nav', 'form'
+    = javascript_include_tag 'jquery.min', 'rails'
+  %body
+    #wrap
+      #header
+        %h1 RecruitMe
+      #nav
+        %ul
+          %li
+            %a{:href => "/"} Option 1
+          %li
+            %a{:href => "/"} Option 2
+          %li
+            %a{:href => "/"} Option 3
+          %li
+            %a{:href => "/"} Option 4
+          %li.right
+            %form
+              %input{:name => 'name'}
+              %input{:type => "submit", :value => 'Search Candidate'} 
+      #main
+        = yield
+      #footer
+        %p Footer

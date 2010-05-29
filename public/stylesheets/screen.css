@@ -1,0 +1,38 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    background: #a7a09a;
+}
+
+#wrap {
+    width: 960px;
+    margin: 0 auto;
+    background: #99c;
+}
+
+#header {
+    padding: 5px 10px;
+    background: #ddd;
+}
+
+#main {
+    padding: 10px;
+    background: #9c9;
+}
+
+#footer {
+    clear: both;
+    padding: 5px 10px;
+    background: #cc9;
+}
+
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
