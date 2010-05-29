@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(:version => 20100529075555) do
     t.string   "office"
     t.string   "contact_number"
     t.string   "status"
+    t.string   "skills"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
