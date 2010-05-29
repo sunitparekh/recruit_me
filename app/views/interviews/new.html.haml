@@ -1,0 +1,5 @@
+%h1 New interview
+= form_for(@interview, :url => candidate_interviews_path(:candidate_id => @interview.candidate.id)) do |f|
+  = render :partial => 'form', :locals => { :interview_form => f }
+  .actions
+    = f.submit

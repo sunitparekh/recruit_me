@@ -1,0 +1,17 @@
+%h2 Listing interviews
+%table
+  %tr
+    %th when
+    %th type
+    %th interviewer
+    %th where
+    %th
+  - @candidate.interviews.each do |interview|
+    %tr
+      %td= interview.when
+      %td= interview.interview_type
+      %td= [interview.interviewer_one, interview.interviewer_two, interview.interviewer_three].compact.join(", ")
+      %td= interview.where
+      %td
+        = link_to 'Edit Appointment', edit_candidate_interview_path(interview), :class => "small"
+        = link_to 'Destroy', candidate_interview_path(@candidate.id, interview.id), :confirm => 'Are you sure?', :method => :delete, :class => "small secondary"

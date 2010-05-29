@@ -1,0 +1,49 @@
+- if @interview.errors.any?
+  .error
+    %h2
+      = pluralize(@interview.errors.count, "error")
+      prohibited this interview from being saved:
+    %ul
+      - @interview.errors.full_messages.each do |msg|
+        %li= msg
+= interview_form.hidden_field :candidate_id
+.field
+  .label
+    = interview_form.label "Candidate:"
+  .control
+    = interview_form.label @interview.candidate.name unless @interview.candidate.nil?
+.spacer
+.field
+  .label
+    = interview_form.label "When:"
+  .control
+    = interview_form.datetime_select :when, :date_separator => '/', :time_separator => ':'
+    (date and time when interview is schedule)
+.field
+  .label
+    = interview_form.label "Type: "
+  .control
+    = interview_form.select(:interview_type, options_for_select([['Screening', 'Screening'], ['Telephonic', 'Telephonic'], ['Code Review', 'Code Review'], ['Code Pairing', 'Code Pairing'], ['Office', 'Office'], ['Casual Meeting', 'Casual Meeting'] ], @interview.interview_type || 'Office'))
+.spacer
+.field
+  .label
+    = interview_form.label "Interviewer:"
+  .control
+    = interview_form.text_field :interviewer_one
+.field
+  .label
+    = interview_form.label "Interviewer:"
+  .control
+    = interview_form.text_field :interviewer_two
+.field
+  .label
+    = interview_form.label "Interviewer:"
+  .control
+    = interview_form.text_field :interviewer_three
+.spacer
+.field
+  .label
+    = interview_form.label "Where:"
+  .control
+  = interview_form.text_field :where, :size => 20
+  (room where interview is scheduled)
