@@ -12,16 +12,16 @@
       #nav
         %ul
           %li
-            %a{:href => "/"} Option 1
+            %a{:href => candidates_path('filter[status]' => 'In Progress')} In Progress Candidates
           %li
-            %a{:href => "/"} Option 2
+            %a{:href => new_candidate_path} New Candidate
           %li
             %a{:href => "/"} Option 3
           %li
             %a{:href => "/"} Option 4
           %li.right
-            %form
-              %input{:name => 'name'}
+            %form{:action => candidates_path}
+              %input{:name => 'filter[name]'}
               %input{:type => "submit", :value => 'Search Candidate'} 
       #main
         = yield

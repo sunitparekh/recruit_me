@@ -1,0 +1,22 @@
+.field {
+    clear: both;
+    padding: 5px 0
+}
+
+.field .label {
+    float: left;
+    width: 20%;
+    text-align: right;
+    padding: 0 10px
+}
+
+.field .control {
+    float: left;
+}
+
+.actions {
+    padding: 20px 0;
+    clear: both;
+    width: 100%;
+    text-align: center;
+}

@@ -8,45 +8,55 @@
         - @candidate.errors.full_messages.each do |msg|
           %li= msg
   .field
-    = f.label :name
-    %br/
-    = f.text_field :name
+    .label
+      = f.label :name
+    .control
+      = f.text_field :name
   .field
-    = f.label :email
-    %br/
-    = f.text_field :email
+    .label
+      = f.label :email
+    .control
+      = f.text_field :email
   .field
-    = f.label :role
-    %br/
-    = f.text_field :role
+    .label
+      = f.label :role
+    .control
+      = f.select(:role, options_for_select([['Project Manager', 'Project Manager'], ['Developer', 'Developer'], ['Business Analys', 'Business Analyst'], ['Quality Analyst', 'Quality Analyst']], @candidate.role))
   .field
-    = f.label :position
-    %br/
-    = f.text_field :position
+    .label
+      = f.label :position
+    .control
+      = f.select(:position, options_for_select([['Consultant', 'Consultant'], ['Sr. Consultant', 'Sr. Consultant'], ['Lead Consultant', 'Lead Consultant'], ['Principle Consultant', 'Principle Consultant'], ['Contractor', 'Contractor']], @candidate.position))
   .field
-    = f.label :experience
-    %br/
-    = f.text_field :experience
+    .label
+      = f.label :experience
+    .control
+      = f.text_field :experience, :size => 3, :max_length => 5
   .field
-    = f.label :coordinator
-    %br/
-    = f.text_field :coordinator
+    .label
+      = f.label :coordinator
+    .control
+      = f.text_field :coordinator
   .field
-    = f.label :city
-    %br/
-    = f.text_field :city
+    .label
+      = f.label :city
+    .control
+      = f.text_field :city
   .field
-    = f.label :office
-    %br/
-    = f.text_field :office
+    .label
+      = f.label :office
+    .control
+      = f.text_field :office
   .field
-    = f.label :contact_number
-    %br/
-    = f.text_field :contact_number
+    .label
+      = f.label :contact_number
+    .control
+      = f.text_field :contact_number
   .field
-    = f.label :status
-    %br/
-    = f.text_field :status
+    .label
+      = f.label :status
+    .control
+      = f.select(:status, options_for_select([['Open', 'Open'], ['In Progress', 'In Progress'], ['On Hold', 'On Hold'], ['Pass', 'Pass'], ['Pursue', 'Pursue'], ['Closed', 'Closed']], @candidate.status))
   .actions
     = f.submit
     
