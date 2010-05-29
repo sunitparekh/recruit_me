@@ -1,8 +1,5 @@
 body,
 html {
-    margin: 0;
-    padding: 0;
-    color: #000;
     background: #a7a09a;
     font-family: Lucida Sans,serif;
     font-size: 10pt;
@@ -55,11 +52,14 @@ th, td {
 }
 
 h1 {
+    margin: 5px;
     font-size: 1.6em;
 }
 h2 {
+    margin: 5px;
     font-size: 1.4em;
 }
 h3 {
+    margin: 5px;
     font-size: 1.2em;
 }

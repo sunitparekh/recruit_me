@@ -1,5 +1,5 @@
 RecruitMe::Application.routes.draw do |map|
-  resources :candidates
+  resources :candidates, :path_names => { :home => 'home' }
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -50,7 +50,7 @@ RecruitMe::Application.routes.draw do |map|
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => "welcome#index"
+  root :to => "candidates#home"
 
   # See how all your routes lay out with "rake routes"
 

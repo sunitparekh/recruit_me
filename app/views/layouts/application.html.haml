@@ -3,7 +3,7 @@
   %head
     %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
     %title RecruitMe - ThoughtWorks Recruiting
-    = stylesheet_link_tag 'screen', 'nav', 'form'
+    = stylesheet_link_tag 'reset-min','screen', 'nav', 'form'
     = javascript_include_tag 'jquery.min', 'rails'
   %body
     #wrap
@@ -16,7 +16,7 @@
           %li
             %a{:href => new_candidate_path} New Candidate
           %li
-            %a{:href => "/"} Interview Schedule
+            %a{:href => "/"} Schedule Interview
           %li.right
             .left.search
               %form{:action => candidates_path}

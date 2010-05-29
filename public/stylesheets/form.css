@@ -29,10 +29,11 @@
 
 .error {
     color: red;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #666666;
     background-color: #d6d5d5;
 }
+
 input, select, textarea{
     font-size: 0.9em;
     padding: 2px;

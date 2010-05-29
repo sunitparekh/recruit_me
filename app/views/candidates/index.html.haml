@@ -1,5 +1,6 @@
 %h1.left Listing candidates
 .right
+  (max 50 records)
   %b by
   = params[:filter].each.collect { |key, value| "#{key}: #{value}"}.join(", ") unless params[:filter].nil?
 %table
@@ -29,3 +30,4 @@
         = link_to 'Show', candidate, :class => "small"
         = link_to 'Edit', edit_candidate_path(candidate), :class => "small"
         = link_to 'Delete', candidate, :confirm => 'Are you sure?', :method => :delete, :class => "small secondary"
+  

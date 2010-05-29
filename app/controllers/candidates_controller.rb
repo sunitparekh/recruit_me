@@ -11,8 +11,13 @@ class CandidatesController < ApplicationController
   end
 
   def index
-    @canidates_search = prepare_filter
-    @candidates = @canidates_search.all
+    @candidates = prepare_filter.all
+  end
+
+  def home
+    params[:filter] = { :status => 'In Progress'}
+    @candidates = prepare_filter.all(:limit => 50)
+    render 'index'
   end
 
   def show
