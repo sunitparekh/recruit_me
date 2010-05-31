@@ -17,7 +17,7 @@
   .label
     = interview_form.label "When:"
   .control
-    = interview_form.datetime_select :when, :date_separator => '/', :time_separator => ':'
+    = interview_form.datetime_select :starts_at, :date_separator => '/', :time_separator => ':'
     (date and time when interview is schedule)
 .field
   .label

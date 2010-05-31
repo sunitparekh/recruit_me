@@ -9,7 +9,7 @@
     %th
   - @candidate.interviews.each do |interview|
     %tr
-      %td= interview.when.strftime("%d/%m/%Y at %I:%M%p")
+      %td= interview.starts_at.strftime("%d/%m/%Y at %I:%M%p")
       %td.alt_col= interview.interview_type
       %td= [interview.interviewer_one, interview.interviewer_two, interview.interviewer_three].compact.join(", ")
       %td.alt_col= interview.where

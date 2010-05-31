@@ -2,7 +2,7 @@ class CreateInterviews < ActiveRecord::Migration
   def self.up
     create_table :interviews do |t|
       t.integer :candidate_id
-      t.datetime :when
+      t.datetime :starts_at
       t.string :interview_type
       t.string :interviewer_one
       t.string :interviewer_two

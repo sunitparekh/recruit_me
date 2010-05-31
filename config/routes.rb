@@ -5,6 +5,8 @@ RecruitMe::Application.routes.draw do |map|
     resources :interviews
   end
 
+  match '/calendar' => 'calendar#show', :as => :calendar
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

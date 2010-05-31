@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(:version => 20100529165808) do
 
   create_table "interviews", :force => true do |t|
     t.integer  "candidate_id"
-    t.datetime "when"
+    t.datetime "starts_at"
     t.string   "interview_type"
     t.string   "interviewer_one"
     t.string   "interviewer_two"
