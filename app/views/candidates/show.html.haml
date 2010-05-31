@@ -41,6 +41,11 @@
     = @candidate.coordinator
 .field
   .label
+    %b Source:
+  .value
+    = @candidate.source
+.field
+  .label
     %b City:
   .value
     = @candidate.city
@@ -59,4 +64,15 @@
     %b Status:
   .value
     = @candidate.status
+.field
+  .label
+    %b In Progress Status:
+  .value
+    = @candidate.inprogress_status
+.field
+  .label
+    %b Offer Decline Reason
+  .value
+    = @candidate.decline_reason
+.spacer    
 = render 'interviews/index', :locals => { :interviews => @candidate.interviews }

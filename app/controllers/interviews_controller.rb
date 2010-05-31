@@ -31,6 +31,6 @@ class InterviewsController < ApplicationController
     @interview = Interview.find(params[:id])
     @interview.destroy
 
-    redirect_to(interviews_url)
+    redirect_to(@interview.candidate, :notice => 'Interview was deleted updated.')
   end
 end

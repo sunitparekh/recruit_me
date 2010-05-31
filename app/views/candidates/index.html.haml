@@ -6,24 +6,24 @@
 %table
   %tr
     %th name
-    %th email
+    %th.alt_col email
     %th exp
-    %th role, position
+    %th.alt_col role, position
     %th skills
-    %th coordinator
-    %th Contact number
-    %th Status
+    %th.alt_col coordinator
+    %th contact_number
+    %th.alt_col status, inprogress_status
     %th
   - @candidates.each do |candidate|
     %tr
       %td= candidate.name
-      %td= candidate.email
+      %td.alt_col= candidate.email
       %td= "#{candidate.experience} yrs"
-      %td= "#{candidate.role}, #{candidate.position}"
+      %td.alt_col= "#{candidate.role}, #{candidate.position}"
       %td= candidate.skills
-      %td= candidate.coordinator
+      %td.alt_col= candidate.coordinator
       %td= candidate.contact_number
-      %td= candidate.status
+      %td.alt_col= "#{candidate.status}, #{candidate.inprogress_status}"
       %td
         = link_to 'Show', candidate, :class => "small"
         = link_to 'Edit', edit_candidate_path(candidate), :class => "small"

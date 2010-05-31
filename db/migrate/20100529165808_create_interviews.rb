@@ -8,6 +8,8 @@ class CreateInterviews < ActiveRecord::Migration
       t.string :interviewer_two
       t.string :interviewer_three
       t.string :where
+      t.string :result
+      t.text :notes
 
       t.timestamps
     end

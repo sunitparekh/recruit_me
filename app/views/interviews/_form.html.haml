@@ -23,27 +23,29 @@
   .label
     = interview_form.label "Type: "
   .control
-    = interview_form.select(:interview_type, options_for_select([['Screening', 'Screening'], ['Telephonic', 'Telephonic'], ['Code Review', 'Code Review'], ['Code Pairing', 'Code Pairing'], ['Office', 'Office'], ['Casual Meeting', 'Casual Meeting'] ], @interview.interview_type || 'Office'))
-.spacer
-.field
-  .label
-    = interview_form.label "Interviewer:"
-  .control
-    = interview_form.text_field :interviewer_one
-.field
-  .label
-    = interview_form.label "Interviewer:"
-  .control
-    = interview_form.text_field :interviewer_two
-.field
-  .label
-    = interview_form.label "Interviewer:"
-  .control
-    = interview_form.text_field :interviewer_three
-.spacer
+    = interview_form.select(:interview_type, options_for_select([['Screening', 'Screening'], ['Telephonic', 'Telephonic'], ['Code Pairing', 'Code Pairing'], ['Office', 'Office'], ['Casual Meeting', 'Casual Meeting'] ], @interview.interview_type || 'Office'))
 .field
   .label
     = interview_form.label "Where:"
   .control
   = interview_form.text_field :where, :size => 20
   (room where interview is scheduled)
+.spacer
+.field
+  .label
+    = interview_form.label "Interviewer Panel:"
+  .control
+    = interview_form.text_field :interviewer_one
+    = interview_form.text_field :interviewer_two
+    = interview_form.text_field :interviewer_three
+.field
+  .label
+    = interview_form.label "Interview Notes:"
+  .control
+    = interview_form.text_area :notes, :cols => 100, :row => 5 
+.spacer
+.field
+  .label
+    = interview_form.label "Result:"
+  .control
+    = interview_form.select(:result, options_for_select([['', ''], ['Pass', 'Pass'], ['Pursue', 'Pursue'], ["Can't Say", "Can't Say"]], @interview.result || ''))

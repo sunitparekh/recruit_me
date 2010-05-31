@@ -2,16 +2,18 @@
 %table
   %tr
     %th when
-    %th type
+    %th.alt_col type
     %th interviewer
-    %th where
+    %th.alt_col where
+    %th result
     %th
   - @candidate.interviews.each do |interview|
     %tr
-      %td= interview.when
-      %td= interview.interview_type
+      %td= interview.when.strftime("%d/%m/%Y at %I:%M%p")
+      %td.alt_col= interview.interview_type
       %td= [interview.interviewer_one, interview.interviewer_two, interview.interviewer_three].compact.join(", ")
-      %td= interview.where
+      %td.alt_col= interview.where
+      %td= interview.result
       %td
         = link_to 'Edit Appointment', edit_candidate_interview_path(interview), :class => "small"
         = link_to 'Destroy', candidate_interview_path(@candidate.id, interview.id), :confirm => 'Are you sure?', :method => :delete, :class => "small secondary"
