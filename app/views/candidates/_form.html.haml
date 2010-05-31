@@ -1,12 +1,5 @@
 = form_for(@candidate) do |f|
-  - if @candidate.errors.any?
-    .error
-      %h3
-        = pluralize(@candidate.errors.count, "error")
-        prohibited this candidate from being saved:
-      %ul
-        - @candidate.errors.full_messages.each do |msg|
-          %li= msg
+  = render 'shared/errors'
   .field
     .label
       = f.label "Name:"

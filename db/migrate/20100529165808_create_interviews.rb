@@ -3,6 +3,7 @@ class CreateInterviews < ActiveRecord::Migration
     create_table :interviews do |t|
       t.integer :candidate_id
       t.datetime :starts_at
+      t.integer :duration
       t.string :interview_type
       t.string :interviewer_one
       t.string :interviewer_two

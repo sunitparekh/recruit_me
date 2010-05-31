@@ -1,18 +1,17 @@
 .left
-  = link_to "Previous Week", calendar_url(:start_date => @start_date - 7.days)
-  = link_to "Next Week", calendar_url(:start_date => @start_date + 7.days)
+  = link_to "<< Previous Week", calendar_url(:start_date => @start_date - 7.days)
+  = link_to "Next Week >>", calendar_url(:start_date => @start_date + 7.days)
 .right
   = link_to "Business Hours", calendar_url(:start_date => @start_date, :business_hours => 'true')
   = link_to "24-Hours", calendar_url(:start_date => @start_date, :business_hours => 'false')
 .spacer  
-- end_date = @start_date + 6.days
 - options = build_options
 
 #week
   #days
     #placeholder
-      Weekly View
-    - for day in @start_date..end_date
+      %b Weekly Schedule
+    - for day in @start_date..@end_date
       #day
         %b
           = day.strftime('%A')
@@ -25,11 +24,10 @@
           %b
             = hour
     %div{:id => options[:grid]}
-      - for day in @start_date..end_date
+      - for day in @start_date..@end_date
         %div{:id => options[:day_row]}
           - for interview in @interviews
             - if interview.starts_at.strftime('%j').to_s == day.strftime('%j').to_s
               - if interview.starts_at.strftime('%H').to_i >= options[:start_hour] and interview.ends_at.strftime('%H').to_i <= options[:end_hour]
-                #week_event{:style =>"left:#{left(interview.starts_at,params[:business_hours])}px;width:#{width(interview.starts_at,interview.ends_at)}px;"}
-                  = interview.starts_at.strftime('%I:%M%p')
+                #week_event{:style =>"left:#{left(interview.starts_at,params[:business_hours])}px;width:#{width(interview.starts_at,interview.ends_at)}px;margin-top:#{margin_top(interview)}px"}
                   = interview.candidate.name

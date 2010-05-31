@@ -1,11 +1,4 @@
-- if @interview.errors.any?
-  .error
-    %h2
-      = pluralize(@interview.errors.count, "error")
-      prohibited this interview from being saved:
-    %ul
-      - @interview.errors.full_messages.each do |msg|
-        %li= msg
+= render 'shared/errors'
 = interview_form.hidden_field :candidate_id
 .field
   .label
@@ -19,6 +12,11 @@
   .control
     = interview_form.datetime_select :starts_at, :date_separator => '/', :time_separator => ':'
     (date and time when interview is schedule)
+.field
+  .label
+    = interview_form.label "Duration:"
+  .control
+    = interview_form.select(:duration, options_for_select([['30 minutes', '30'], ['1 hr', '60'], ['1 hr 30 min', '90']], @interview.duration || '60'))
 .field
   .label
     = interview_form.label "Type: "

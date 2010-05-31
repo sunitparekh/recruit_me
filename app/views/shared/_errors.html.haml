@@ -1,0 +1,8 @@
+- if @interview.errors.any?
+  .error
+    %h2
+      = pluralize(@interview.errors.count, "error")
+      prohibited this interview from being saved:
+    %ul
+      - @interview.errors.full_messages.each do |msg|
+        %li= msg
