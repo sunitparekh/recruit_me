@@ -145,8 +145,8 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] railties (v3.0.0.beta3, /Users/sunit/.rvm/gems/ruby-head@global/gems/railties-3.0.0.beta3)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] actionmailer (v3.0.0.beta3, /Users/sunit/.rvm/gems/ruby-head@global/gems/actionmailer-3.0.0.beta3)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] bundler (v0.9.25, /Users/sunit/.rvm/gems/ruby-head@global/gems/bundler-0.9.25)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] activerecord (v3.0.0.beta3, /Users/sunit/.rvm/gems/ruby-head@global/gems/activerecord-3.0.0.beta3)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] actionpack (v3.0.0.beta3, /Users/sunit/.rvm/gems/ruby-head@global/gems/actionpack-3.0.0.beta3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activerecord (v3.0.0.beta3, /Users/sunit/.rvm/gems/ruby-head@global/gems/activerecord-3.0.0.beta3)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] activeresource (v3.0.0.beta3, /Users/sunit/.rvm/gems/ruby-head@global/gems/activeresource-3.0.0.beta3)" level="application" />
   </component>
 </module>
