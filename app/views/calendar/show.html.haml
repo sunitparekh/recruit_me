@@ -29,5 +29,13 @@
           - for interview in @interviews
             - if interview.starts_at.strftime('%j').to_s == day.strftime('%j').to_s
               - if interview.starts_at.strftime('%H').to_i >= options[:start_hour] and interview.ends_at.strftime('%H').to_i <= options[:end_hour]
-                #week_event{:style =>"left:#{left(interview.starts_at,params[:business_hours])}px;width:#{width(interview.starts_at,interview.ends_at)}px;margin-top:#{margin_top(interview)}px"}
+                .week_event{:class => "#{sanitize(interview.interview_type)}",:style =>"left:#{left(interview.starts_at,params[:business_hours])}px;width:#{width(interview.starts_at,interview.ends_at)}px;margin-top:#{margin_top(interview)}px", :title => interview.short_desc}
                   = interview.candidate.name
+
+.legends
+  .left Legends:
+  .screening.left Screening
+  .office.left Office
+  .telephonic.left Telephonic
+  .casual_meeting.left Casual Meeting
+  .code_pairing.left Code Pairing

@@ -1,4 +1,3 @@
-/* -- WeeklyBuilder -- */
 /* layout */
 #week{background:#FFF;width:100%;height:100%;border:1px solid #ccc;overflow:hidden;}
 #days{float:left;width:15%;}
@@ -12,20 +11,31 @@
 #day{height:57px;border-right:1px solid #8F8F8F;border-top:1px solid #ccc;padding:17px 0px 0px 18px;}
 #placeholder{height:39px;border-top:1px solid #fff;border-right:1px solid #ccc;padding:15px 0px 0px 18px;}
 #day_row{width:1125px;height:75px;position:relative;}
-#day_row #week_event{font-size:0.8em;background:#CD8AA4;float:left;position:absolute;height:14px;color:#000;padding:0 2px;border-left:4px solid #5A484F;opacity:0.90;filter:alpha(opacity=90);cursor:pointer;overflow:hidden;}
-#day_row #week_event a{color:#000;}
-#day_row #week_event:hover{background:#E097B3;}
+#day_row .week_event{font-size:0.8em;float:left;position:absolute;height:14px;padding:0 2px;border-left:4px solid #000;opacity:0.80;filter:alpha(opacity=80);cursor:pointer;overflow:hidden;}
+#day_row .week_event a{color:#000;}
+#day_row .week_event:hover{background:#000; color:#fff;}
 #day_row #click_hour{height:57px;width:55px;border-right:1px solid #cfe6ec;padding:17px 1px 0px 18px;float:left;}
 #day_row #click_hour a{color:#000;}
 #day_row #click_hour:hover{background:#C7F980;}
 
 /* 24-hour calendar view */
 #full_day_row{width:1800px;height:75px;position:relative;}
-#full_day_row #week_event{font-size:0.8em;background:#CD8AA4;float:left;position:absolute;height:14px;color:#000;padding:0 2px;border-left:4px solid #5A484F;opacity:0.90;filter:alpha(opacity=90);cursor:pointer;overflow:hidden;}
-#full_day_row #week_event a{color:#000;}
-#full_day_row #week_event:hover{background:#E097B3;}
+#full_day_row .week_event{font-size:0.8em;float:left;position:absolute;height:14px;padding:0 2px;border-left:4px solid #000;opacity:0.80;filter:alpha(opacity=80);cursor:pointer;overflow:hidden;}
+#full_day_row .week_event a{color:#000;}
+#full_day_row .week_event:hover{background:#000; color:#fff;}
 #full_header_row{width:1800px;height:54px;background:#A8CFDA;}
 #full_grid{background-color:#FFEDCA;background-image:url(/images/grid.png);width:1800px;}
 #full_day_row #click_hour{height:57px;width:55px;border-right:1px solid #cfe6ec;padding:17px 1px 0px 18px;float:left;}
 #full_day_row #click_hour a{color:#000;}
 #full_day_row #click_hour:hover{background:#C7F980;}
+
+/* color coding interview types */
+.screening{background: #a4bef4;}
+.telephonic{background: #ccffcc;}
+.code_pairing{background: #c5c5c8;}
+.office{background: #99ffff;}
+.casual_meeting {background: #999900;}
+
+.legends div {
+    margin-right: 20px;
+}
