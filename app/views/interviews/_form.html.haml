@@ -1,4 +1,4 @@
-= render 'shared/errors'
+= render :partial => 'shared/errors', :locals => { :object => @interview }
 = interview_form.hidden_field :candidate_id
 .field
   .label

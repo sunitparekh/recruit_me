@@ -55,10 +55,11 @@ module CalendarHelper
   def margin_top this
     top_margin = 0
     @interviews.each do |other|
-      if other.starts_at.day == this.starts_at.day && other != this
+      return top_margin if other == this
+      if other.starts_at.day == this.starts_at.day
         if (other.ends_at.hour * 60 + other.ends_at.min) > (this.starts_at.hour * 60 + this.starts_at.min) &&
            (other.starts_at.hour * 60 + other.starts_at.min) < (this.starts_at.hour * 60 + this.starts_at.min)
-          top_margin += 30
+          top_margin += 15
         end
       end
     end

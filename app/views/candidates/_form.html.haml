@@ -1,5 +1,5 @@
 = form_for(@candidate) do |f|
-  = render 'shared/errors'
+  = render :partial => 'shared/errors', :locals => { :object => @candidate }
   .field
     .label
       = f.label "Name:"

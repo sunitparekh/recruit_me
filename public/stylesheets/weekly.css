@@ -12,7 +12,7 @@
 #day{height:57px;border-right:1px solid #8F8F8F;border-top:1px solid #ccc;padding:17px 0px 0px 18px;}
 #placeholder{height:39px;border-top:1px solid #fff;border-right:1px solid #ccc;padding:15px 0px 0px 18px;}
 #day_row{width:1125px;height:75px;position:relative;}
-#day_row #week_event{font-size:0.8em;background:#CD8AA4;float:left;position:absolute;height:29px;color:#000;padding:0 2px;border-left:4px solid #5A484F;opacity:0.90;filter:alpha(opacity=90);cursor:pointer;overflow:hidden;}
+#day_row #week_event{font-size:0.8em;background:#CD8AA4;float:left;position:absolute;height:14px;color:#000;padding:0 2px;border-left:4px solid #5A484F;opacity:0.90;filter:alpha(opacity=90);cursor:pointer;overflow:hidden;}
 #day_row #week_event a{color:#000;}
 #day_row #week_event:hover{background:#E097B3;}
 #day_row #click_hour{height:57px;width:55px;border-right:1px solid #cfe6ec;padding:17px 1px 0px 18px;float:left;}
@@ -21,7 +21,7 @@
 
 /* 24-hour calendar view */
 #full_day_row{width:1800px;height:75px;position:relative;}
-#full_day_row #week_event{font-size:0.8em;background:#CD8AA4;float:left;position:absolute;height:29px;color:#000;padding:0 2px;border-left:4px solid #5A484F;opacity:0.90;filter:alpha(opacity=90);cursor:pointer;overflow:hidden;}
+#full_day_row #week_event{font-size:0.8em;background:#CD8AA4;float:left;position:absolute;height:14px;color:#000;padding:0 2px;border-left:4px solid #5A484F;opacity:0.90;filter:alpha(opacity=90);cursor:pointer;overflow:hidden;}
 #full_day_row #week_event a{color:#000;}
 #full_day_row #week_event:hover{background:#E097B3;}
 #full_header_row{width:1800px;height:54px;background:#A8CFDA;}

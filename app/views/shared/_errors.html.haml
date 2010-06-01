@@ -1,8 +1,8 @@
-- if @interview.errors.any?
+- if object.errors.any?
   .error
     %h2
-      = pluralize(@interview.errors.count, "error")
+      = pluralize(object.errors.count, "error")
       prohibited this interview from being saved:
     %ul
-      - @interview.errors.full_messages.each do |msg|
+      - object.errors.full_messages.each do |msg|
         %li= msg

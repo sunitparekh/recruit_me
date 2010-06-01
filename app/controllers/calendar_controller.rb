@@ -8,6 +8,6 @@ class CalendarController < ApplicationController
     @start_date = @date.to_date
     @end_date = @start_date + 6.days
 
-    @interviews = Interview.where(['starts_at > ? and starts_at < ?', @start_date.to_datetime, (@start_date + 7.days).end_of_day]).all
+    @interviews = Interview.where(['starts_at > ? and starts_at < ?', @start_date.to_datetime, (@start_date + 7.days).end_of_day]).order("starts_at").all
   end
 end
