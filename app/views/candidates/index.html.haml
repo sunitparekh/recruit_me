@@ -1,6 +1,5 @@
 %h1.left Listing candidates
 .right
-  (max 50 records)
   %b by
   = params[:filter].each.collect { |key, value| "#{key}: #{value}"}.join(", ") unless params[:filter].nil?
 %table

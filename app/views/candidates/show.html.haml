@@ -2,8 +2,8 @@
   %p.notice
     = notice
 .right
-  = link_to 'Edit Candidate', edit_candidate_path(@candidate)
-  = link_to 'Schedule Interview', new_candidate_interview_path(:candidate_id => @candidate.id)
+  = link_to 'Edit Candidate', edit_candidate_path(@candidate), :class => "button"
+  = link_to 'Schedule Interview', new_candidate_interview_path(:candidate_id => @candidate.id), :class => "button"
 .field
   .label
     %b Name:

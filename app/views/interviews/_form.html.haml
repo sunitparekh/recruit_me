@@ -21,7 +21,7 @@
   .label
     = interview_form.label "Type: "
   .control
-    = interview_form.select(:interview_type, options_for_select([['Screening', 'Screening'], ['Telephonic', 'Telephonic'], ['Code Pairing', 'Code Pairing'], ['Office', 'Office'], ['Casual Meeting', 'Casual Meeting'] ], @interview.interview_type || 'Office'))
+    = interview_form.select(:interview_type, options_for_select([['Screening', 'Screening'], ['Telephonic', 'Telephonic'], ['Code Review', 'Code Review'], ['Code Pairing', 'Code Pairing'], ['Office', 'Office'], ['Casual Meeting', 'Casual Meeting'] ], @interview.interview_type || 'Office'))
 .field
   .label
     = interview_form.label "Where:"
