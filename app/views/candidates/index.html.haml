@@ -25,8 +25,8 @@
       %td= candidate.contact_number
       %td.alt_col= "#{candidate.status}, #{candidate.inprogress_status}"
       %td
-        = link_to 'Show', candidate, :class => "small"
-        = link_to 'Edit', edit_candidate_path(candidate), :class => "small"
-        = link_to 'Schedule Interview', new_candidate_interview_path(:candidate_id => candidate.id), :class => "small"
-        = link_to 'Delete', candidate, :confirm => 'Are you sure?', :method => :delete, :class => "small secondary"
+        = link_to 'Show', candidate, :class => "button small"
+        = link_to 'Edit', edit_candidate_path(candidate), :class => "button small"
+        = link_to 'Schedule Interview', new_candidate_interview_path(:candidate_id => candidate.id), :class => "button small"
+        = link_to 'Delete', candidate, :confirm => 'Are you sure?', :method => :delete, :class => "button small secondary"
 

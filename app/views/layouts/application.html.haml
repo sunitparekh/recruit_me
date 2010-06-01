@@ -12,17 +12,21 @@
       #nav
         %ul
           %li
-            %a{:href => candidates_path('filter[status]' => 'In Progress')} In Progress Candidates
+            %a.button{:href => new_candidate_path} New Candidate
           %li
-            %a{:href => new_candidate_path} New Candidate
-          %li
-            %a{:href => calendar_url} Interview Schedule
+            %a.button{:href => calendar_url} Interview Schedule
           %li.right
             .left.search
               %form{:action => candidates_path}
-                %input{:name => 'filter[name]', :size => 30}
-                %input{:type => "submit", :value => 'Search Candidate', :class => "submit"}
+                %input{:name => 'filter[name]', :size => 30, :accesskey => "S"}
+                %input{:type => "submit", :value => 'Search Candidate', :class => "button"}
       #main
         = yield
       #footer
-        %p @copyright ThoughtWorks Inc.
+        %div
+          search fav bar:
+        = link_to "All", candidates_path
+        = link_to "In Progress", candidates_path('filter[status]' => 'In Progress')
+        = link_to "Closed after Screening", candidates_path('filter[status]' => 'Closed', 'filter[inprogress_status]' => 'Screening')
+        = link_to "Delhi office", candidates_path('filter[office]' => 'Delhi')
+        = link_to "Awaiting Telephonic", candidates_path('filter[status]' => 'In Progress', 'filter[inprogress_status]' => 'Code Review Pending')

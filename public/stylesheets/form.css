@@ -47,7 +47,13 @@ input, select, textarea{
     border-radius: 3px;
 }
 
-a, .submit{
+a {
+    font-size: 0.8em;
+    margin: 0 10px;
+    
+}
+
+.button {
     font-size: 0.9em;
     padding: 5px 12px;
     margin: 0 10px;

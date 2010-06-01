@@ -1,9 +1,9 @@
 .left
-  = link_to "<< Previous Week", calendar_url(:start_date => @start_date - 7.days)
-  = link_to "Next Week >>", calendar_url(:start_date => @start_date + 7.days)
+  = link_to "<< Previous Week", calendar_url(:start_date => @start_date - 7.days), :class => "button"
+  = link_to "Next Week >>", calendar_url(:start_date => @start_date + 7.days), :class => "button"
 .right
-  = link_to "Business Hours", calendar_url(:start_date => @start_date, :business_hours => 'true')
-  = link_to "24-Hours", calendar_url(:start_date => @start_date, :business_hours => 'false')
+  = link_to "Business Hours", calendar_url(:start_date => @start_date, :business_hours => 'true'), :class => "button"
+  = link_to "24-Hours", calendar_url(:start_date => @start_date, :business_hours => 'false'), :class => "button"
 .spacer  
 - options = build_options
 

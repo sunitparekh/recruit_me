@@ -76,6 +76,6 @@
     .control
       = f.text_field :decline_reason, :size => 70
   .actions
-    = f.submit(:class => "submit")
-    = link_to 'Cancel', candidates_path('filter[status]' => 'In Progress'), :class => "secondary"
+    = f.submit(:class => "button")
+    = link_to 'Cancel', candidates_path('filter[status]' => 'In Progress'), :class => "button secondary"
     
