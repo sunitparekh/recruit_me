@@ -16,7 +16,7 @@
   .label
     = interview_form.label "Duration:"
   .control
-    = interview_form.select(:duration, options_for_select([['30 minutes', '30'], ['1 hr', '60'], ['1 hr 30 min', '90']], @interview.duration || '60'))
+    = interview_form.select(:duration, options_for_select([['15 minutes', '15'],['30 minutes', '30'], ['1 hr', '60'], ['1 hr 30 min', '90']], @interview.duration || '60'))
 .field
   .label
     = interview_form.label "Type: "
