@@ -15,5 +15,5 @@
       %td.alt_col= interview.where
       %td= interview.result
       %td
-        = link_to 'Edit Interview', edit_candidate_interview_path(interview), :class => "button small"
-        = link_to 'Delete', candidate_interview_path(@candidate.id, interview.id), :confirm => 'Are you sure?', :method => :delete, :class => "button small secondary"
+        = link_to 'Edit Interview', edit_candidate_interview_path(:candidate_id => @candidate.id, :id => interview.id), :class => "button small"
+        = link_to 'Delete', candidate_interview_path(:candidate_id => @candidate.id, :id => interview.id), :confirm => 'Are you sure?', :method => :delete, :class => "button small secondary"

@@ -3,3 +3,4 @@
   = render :partial => 'form', :locals => { :interview_form => f }
   .actions
     = f.submit(:class => 'button')
+    = link_to "Cancel", candidate_path(:id => @interview.candidate.id), :class => 'button secondary'
