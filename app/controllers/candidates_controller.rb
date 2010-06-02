@@ -11,7 +11,7 @@ class CandidatesController < ApplicationController
   end
 
   def index
-    @candidates = prepare_filter.order(params[:order] ||  "name").all
+    @candidates = prepare_filter.order(params[:order] ||  "name").all.paginate(:per_page => params[:per_page] || 20, :page => params[:page])
   end
 
   def home

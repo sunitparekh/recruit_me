@@ -53,7 +53,7 @@ a {
     
 }
 
-.button {
+.pagination a, .pagination span, .pagination em, .button {
     font-size: 0.9em;
     padding: 5px 12px;
     margin: 0 10px;
@@ -72,12 +72,12 @@ a {
     box-shadow: 0 1px 3px black;
 }
 
-.small {
+.pagination a, .pagination span, .pagination em, .small {
     padding: 3px 6px;
     margin: 0 3px;
 }
 
-.secondary {
+.secondary, .pagination span, .pagination em {
     background-color: #999999;
     border-color: black;
 }
