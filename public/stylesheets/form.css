@@ -47,10 +47,9 @@ input, select, textarea{
     border-radius: 3px;
 }
 
-a {
+#footer a {
     font-size: 0.8em;
     margin: 0 10px;
-    
 }
 
 .pagination a, .pagination span, .pagination em, .button {

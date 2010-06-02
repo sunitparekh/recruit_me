@@ -29,6 +29,8 @@
 #full_day_row #click_hour a{color:#000;}
 #full_day_row #click_hour:hover{background:#C7F980;}
 
+a {color: #000;}
+
 /* color coding interview types */
 .screening{background: #a4bef4;}
 .telephonic{background: #ccffcc;}
@@ -37,6 +39,4 @@
 .office{background: #99ffff;}
 .casual_meeting {background: #999900;}
 
-.legends div {
-    margin-right: 20px;
-}
+.legends div {margin-right: 20px;}

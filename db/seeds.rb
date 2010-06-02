@@ -27,7 +27,7 @@ Candidate.new({:name => 'Candidate Four', :email => 'email-four@email.com',
                 :contact_number => "812348776324", :status => 'In Progress', :skills => 'java, ruby', :interviews => interviews}).save!
 
 
-interviews = [Interview.new( :starts_at => Time.zone.now + 1.days + 2.hours, :duration => 100, :interview_type => 'Telephonic', :where => 'Bandipur', :interviewer_one => 'Sunit Parekh'),
+interviews = [Interview.new( :starts_at => Time.zone.now + 1.days + 2.hours, :duration => 100, :interview_type => 'Telephonic', :where => 'Bandipur', :interviewer_one => 'Sunit Parekh', :interviewer_two => "Manav Prasad"),
               Interview.new( :starts_at => Time.zone.now + 4.days + 1.hours + 30.minutes, :duration => 60, :interview_type => 'Code Pairing', :where => 'Corbet', :interviewer_one => 'Sunit Parekh'),
               Interview.new( :starts_at => Time.zone.now + 4.days + 1.hours + 30.minutes, :duration => 60, :interview_type => 'Office', :where => 'Corbet', :interviewer_one => 'Sunit Parekh')]
 Candidate.new({:name => 'Sunit Parekh', :email => 'sunitparekh@email.com',
